@@ -135,6 +135,30 @@ body {
     transform: rotate(-5deg);
 }
 
+.balloon-left,
+.balloon-right,
+.globo {
+    animation: float-bubble 6s ease-in-out infinite;
+}
+
+.balloon-left {
+    left: 6%;
+    top: 18%;
+    width: clamp(100px, 14vw, 150px);
+    transform: rotate(-4deg);
+}
+
+.balloon-right {
+    right: 6%;
+    top: 22%;
+    width: clamp(100px, 14vw, 150px);
+    transform: rotate(6deg);
+}
+
+@keyframes float-bubble {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(3deg); }
+}
 
 .greetings {
     font-size: clamp(2.5rem, 10vw, 6rem);
