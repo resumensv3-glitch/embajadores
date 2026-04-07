@@ -70,35 +70,48 @@ body::before {
 
 }
 .titulo {
-  top: 5%;
-  font-family: 'Playfair Display', serif;
-  color: #b39a7e;
-  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  color: #050504;
   font-weight: bold;
-  letter-spacing: 2px;
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-size: clamp(8rem, 18vw, 12rem);
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
   text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
+  margin: 0;
 }
+
 .titulo2 {
-  top: 15%;
-  font-family: 'Playfair Display', serif;
-  color: #b39a7e;
-  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
   font-weight: bold;
-  letter-spacing: 2px;
-  font-size: clamp(3.5rem, 10vw, 7rem);
+  letter-spacing: 1px;
+  line-height: 1.1;
+  font-size: clamp(1rem, 8vw, 3.5rem);
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
   text-align: center;
+  margin: 0.5rem 0 0 0;
+}
+
+.titles-container {
+  position: absolute;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90%;
+  max-width: 900px; /* controla tamaño real */
+  padding: 2rem;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -119,6 +132,65 @@ body::before {
   height: 100%;
   filter: blur(0.1vmin);
   background: transparent;
+}
+
+.titles-container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .titles-container {
+    top: 6%;
+  }
+
+  .titulo {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+  }
+
+  .titulo2 {
+    font-size: clamp(1.4rem, 6vw, 2.5rem);
+    margin-top: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .titles-container {
+    top: 5%;
+  }
+
+  .titulo {
+    font-size: clamp(2.2rem, 9vw, 3.8rem);
+  }
+
+  .titulo2 {
+    font-size: clamp(1.8rem, 7vw, 3.5rem);
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .titles-container {
+    top: 5%;
+  }
+
+  .titulo {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .titulo2 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    margin-top: 0.7rem;
+  }
 }
 
 .flowers {
