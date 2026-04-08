@@ -37,6 +37,7 @@ body::before {
     position: absolute;
     width: clamp(100px, 18vw, 190px);
     opacity: 0.8;
+    animation: float-bubble 6s ease-in-out infinite;
 }
 
 .decor {
