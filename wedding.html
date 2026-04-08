@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" href="img/flowers.png" type="image/x-icon" />
     <title>CULTO JUVENIL</title>
   </head>
   <body class="wedding-page">
-    <audio src="sound/QBELV - (Que bonita está la vida) - Oasis Ministry (Video oficial).mp3" autoplay></audio>
+    <audio id="wedding-audio" src="sound/QBELV - (Que bonita está la vida) - Oasis Ministry (Video oficial).mp3"></audio>
     <div class="background-decor">
       <img src="img/labios.png" class="decor decor-1" alt="Decoración floral" />
       <img src="img/estrella.png" class="decor decor-2" alt="Decoración de estrella" />
@@ -19,9 +20,10 @@
 
     <section class="wedding-card">
       <div class="wedding-header">
-        <span class="headline"> TIENES UNA CITA ESTE    10TH ABRIL</span>
+        <span class="headline"> TIENES UNA CITA ESTE 10TH ABRIL</span>
         <h1>CULTO JUVENIL</h1>
         <p>Te invitamos a unirte con nosotros en un momento especial de adoración y celebración.</p>
+        <button id="music-btn" class="music-button">🎵 Reproducir Música</button>
       </div>
 
       <div class="wedding-info-grid">
@@ -35,7 +37,7 @@
         </article>
         <article class="info-box">
           <h2>Contacto</h2>
-          <p>Puedes escribirnos en<br><a href="https://www.facebook.com/profile.php?id=61577622221800" target="_blank">Facebook</a> | <a href="https://www.instagram.com/juventud_luzyverdad/" target="_blank">Instagram</a><br>Correo: admultimedia37@gmail.com </p>
+          <p>Puedes escribirnos en<br><a href="https://www.facebook.com/profile.php?id=61577622221800" target="_blank"> Facebook</a> | <a href="https://www.instagram.com/juventud_luzyverdad/" target="_blank">Instagram</a><br>Correo: admultimedia37@gmail.com </p>
         </article>
       </div>
 
@@ -54,9 +56,30 @@
         </div>
       </div>
 
+      <div class="full-width-image">
+        <img src="img/insta.png" alt="Imagen destacada del evento" />
+      </div>
+
       <div class="wedding-footer">
         <a href="index.html">Volver al inicio</a>
       </div>
     </section>
+
+    <script>
+      const audio = document.getElementById('wedding-audio');
+      const musicBtn = document.getElementById('music-btn');
+      let isPlaying = false;
+
+      musicBtn.addEventListener('click', () => {
+        if (isPlaying) {
+          audio.pause();
+          musicBtn.textContent = '🎵 Reproducir Música';
+        } else {
+          audio.play();
+          musicBtn.textContent = '⏸️ Pausar Música';
+        }
+        isPlaying = !isPlaying;
+      });
+    </script>
   </body>
 </html>

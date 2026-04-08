@@ -391,6 +391,22 @@ body {
     line-height: 1.7;
 }
 
+.info-box a {
+    color: #9b4d67;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+    color: #7a3d52;
+}
+
+.info-box a i {
+    margin-right: 0.5rem;
+    font-size: 1.1em;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, minmax(12rem, 1fr));
@@ -458,4 +474,40 @@ body {
     .wedding-header h1 {
         font-size: clamp(2rem, 8vw, 3.2rem);
     }
+}
+
+.music-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #9b4d67;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.music-button:hover {
+    background: #7a3d52;
+}
+
+.music-button:active {
+    transform: scale(0.98);
+}
+
+.full-width-image {
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.full-width-image img {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
