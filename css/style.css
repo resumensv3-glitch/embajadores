@@ -180,7 +180,7 @@ body {
 }
 
 .greetings {
-    font-size: clamp(2.5rem, 10vw, 6rem);
+    font-size: clamp(1.05rem, 8vw, 5rem);
     font-weight: 900;
     line-height: 0.85;
     max-width: 100%;
@@ -214,6 +214,8 @@ body {
 .greetings > span:nth-child(9)  { animation-delay: 1.6s; }
 .greetings > span:nth-child(10) { animation-delay: 1.8s; }
 .greetings > span:nth-child(11) { animation-delay: 2s; }
+.greetings > span:nth-child(10) { animation-delay: 2,2s; }
+.greetings > span:nth-child(11) { animation-delay: 2.4s; }
 
 .description {
     font-size: clamp(0.9rem, 3.5vw, 1.3rem);
