@@ -19,11 +19,11 @@ body {
     justify-content: center;
     padding: 2rem 1rem;
     text-align: center;
-    background-color: #f7efe2;
+    background-color: #d4c9b8;
     background-image:
       repeating-linear-gradient(180deg, rgba(0,0,0,0.035) 0 1px, transparent 1px 44px),
-      radial-gradient(circle at top left, rgba(255,255,255,0.75), transparent 30%),
-      linear-gradient(135deg, #fbf2e6, #f0e1d2);
+      radial-gradient(circle at top left, rgba(200,190,180,0.75), transparent 30%),
+      linear-gradient(135deg, #e8d7c8, #d6c8ba);
     background-size: 100% 100%, 100% 100%, 100% 100%;
     box-shadow: inset 0 0 30px rgba(0,0,0,0.08);
     color: #333;
@@ -72,9 +72,9 @@ body {
     padding: 0.75rem 1rem;
     font-size: 0.95rem;
     border-radius: 1rem;
-    background: rgba(255, 246, 220, 0.92);
+    background: rgba(220, 200, 170, 0.95);
     border: 1px dashed rgba(0, 0, 0, 0.1);
-    color: #5a3f20;
+    color: #3d2817;
     box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
@@ -196,10 +196,10 @@ body {
 @keyframes glow {
     0%, 100% {
         color: #fff;
-        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+        text-shadow: 0 0 12px #1a8fa3, 0 0 50px #1a8fa3, 0 0 100px #1a8fa3;
     }
     10%, 90% {
-        color: #b24d79;
+        color: #8b3d63;
         text-shadow: none;
     }
 }
@@ -286,7 +286,7 @@ body {
 
 .botones a {
     display: inline-block;
-    background-color: #0a2be9;
+    background-color: #051db8;
     padding: 0.9rem 1.5rem;
     border-radius: 80px;
     text-decoration: none;
@@ -295,7 +295,7 @@ body {
 }
 
 .botones--secondary a {
-    background-color: #b24d79;
+    background-color: #8b3d63;
 }
 
 .wedding-page {

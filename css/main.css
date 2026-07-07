@@ -7,7 +7,7 @@
 }
 
 :root {
-  --dark-color: #ffb6c1;
+  --dark-color: #e89bb3;
 }
 
 body {
@@ -15,11 +15,11 @@ body {
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f7efe2;
+  background-color: #d4c9b8;
   background-image:
-    repeating-linear-gradient(180deg, rgba(255, 182, 193, 0.08) 0 1px, transparent 1px 44px),
-    radial-gradient(circle at top left, rgba(255,255,255,0.75), transparent 30%),
-    linear-gradient(135deg, #fbf2e6, #f0e1d2);
+    repeating-linear-gradient(180deg, rgba(210, 150, 170, 0.08) 0 1px, transparent 1px 44px),
+    radial-gradient(circle at top left, rgba(200,190,180,0.75), transparent 30%),
+    linear-gradient(135deg, #e8d7c8, #d6c8ba);
   overflow: hidden;
   perspective: 1000px;
 }
@@ -28,7 +28,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(90deg, transparent 22px, rgba(255, 182, 193, 0.15) 22px, transparent 23px);
+  background-image: linear-gradient(90deg, transparent 22px, rgba(210, 150, 170, 0.25) 22px, transparent 23px);
   opacity: 0.25;
   pointer-events: none;
 }
